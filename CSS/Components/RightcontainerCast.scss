@@ -1,0 +1,171 @@
+@mixin cast-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #BAA6DC;
+  border: solid #ffffff 15px;
+  justify-self: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  position: relative;
+}
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin character-img {
+  border: 10px solid white;
+  padding: 15px;
+  background-position: center;
+  background-size: cover;
+}
+@mixin castfont {
+  font-family: 'Righteous';
+  font-size: 2rem;
+}
+
+.container-right-cast {
+  @include cast-container;
+  overflow: hidden;
+  padding: 20px;
+}
+.character-container {
+@include cast-container;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  padding: 200px;
+}
+.cast-title {
+  position: absolute;
+  bottom: 5%;
+}
+.character {
+  width: 25%;
+  height: 45%;
+  position: relative;
+  @include center;
+  padding: 15px;
+  margin: 10px 20px;
+  .character-text {
+    position: relative;
+    bottom: -112.5%;
+    @include castfont;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+}
+  .character-info {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0%;
+    transition: 0.2s;
+    left: 0%;
+    top: 0%;
+    @include castfont;
+    @include center;
+  }
+  .character:hover {
+    .character-text {
+      opacity: 0%;
+      transition: 0.2s;
+    }
+    .character-info {
+      opacity: 100%;
+      transition: 0.2s;
+    }
+  }
+.character-img {
+  @include character-img;
+  height: 100%;
+  width: 100%;
+}
+.aoba {
+  background-image: url("../CSS/Components/Assets/aoba.png")
+}
+.box-aoba {
+  background-color: #E6BFDA;
+}
+.nene {
+  background-image: url("../CSS/Components/Assets/nene.png")
+}
+.box-nene {
+  background-color: #BFDFEC;
+}
+.kou {
+  background-image: url("../CSS/Components/Assets/kou.png")
+}
+.box-kou {
+  background-color: #E16A85;
+}
+.hajime {
+  background-image: url("../CSS/Components/Assets/hajime.png")
+}
+.box-hajime {
+  background-color: #9FCBC3;
+}
+.yun {
+  background-image: url("../CSS/Components/Assets/yun.png");
+}
+.box-yun {
+  background-color: #DA9480;
+}
+.hifumi {
+  background-image: url("../CSS/Components/Assets/hifumi.png")
+}
+.box-hifumi {
+  background-color: #F2E8A1;
+}
+.rin {
+  background-image: url("../CSS/Components/Assets/rin.png")
+}
+.box-rin {
+  background-color: #FBE1ED;
+}
+.umiko {
+  background-image: url("../CSS/Components/Assets/umiko.png")
+}
+.box-umiko {
+  background-color: #B4C891;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:visited {
+    color: #ffffff;
+  }
+.cast-title {
+  position: absolute;
+  @include navfont;
+  bottom: 0%;
+  left: 0%;
+  height: 10%;
+  width: 20%;
+  color: #8069A8;
+}
+.gaoba {
+  z-index: 2;
+  position: absolute;
+  height: 60%;
+  width: 30%;
+  right: -5%;
+  bottom: -3.75%;
+  opacity: 100%;
+  overflow: hidden;
+  display: block;
+  background-image: url("https://cdn.discordapp.com/attachments/682473465630032042/684231915372675113/unknown.png");
+  transition: 0.2s;
+  z-index: 2;
+}
+.gaoba:hover {
+  opacity: 0%;
+  display: hidden;
+  transition: 0.2s;
+}

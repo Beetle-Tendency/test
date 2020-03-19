@@ -1,0 +1,48 @@
+@mixin iconsize {
+    height: 150 px;
+    width: 100 px;
+    justify-self: center;
+    align-self: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.container-right-links {
+    z-index: 1;
+    color: $navtext;
+    width: 100px;
+    height: 300px;
+    position: fixed;
+    top: 35%;
+    align-self: flex-end;
+
+    .sns-icon {
+    font-size: 64px;
+    }
+
+    .twitter {
+    background-color: #8875ad;
+    @include iconsize;
+        :hover {
+            color: #8875AD;
+            background-color: #ffffff;
+    }
+    }
+    .instagram {
+    background-color: #f37290;
+    @include iconsize;
+        :hover {
+            color: #f37290;
+            background-color: #ffffff;
+    }
+    
+    }
+    .discord {
+    background-color: #f5c884;
+    @include iconsize;
+        :hover {
+            color: #f5c884;
+            background-color: #ffffff;
+        }
+    }
+}

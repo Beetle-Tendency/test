@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+@mixin sectionsize {
+    height: 25%;
+    width: 100%;
+    position: relative;
+}
+
+@mixin portraitsize {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.container-right {
+    width: 70%;
+    height: 100%;
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    position: transform(30%, 0);
+
+    .container-right-main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        .container-right-home {
+            background-image: url("https://cdn.discordapp.com/attachments/682473465630032042/682473547637325835/suzukaze_aoba_sakura_nene_hoshikawa_hotaru_and_hidaka_chinatsu_new_game_drawn_by_tokunou_shoutarou__.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+            padding-top: 15%;
+            align-self: flex-end;
+            @include sectionsize;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

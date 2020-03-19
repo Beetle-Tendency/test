@@ -1,0 +1,17 @@
+.container-main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin navfont {
+    font-size: 64px;
+    font-family: "Righteous";
+    text-align: center;
+}
+
+@import "../Components/Leftcontainer.scss";
+@import "../Components/Rightcontainer.scss";
+@import "../Components/RightcontainerNews.scss";
+@import "../Components/RightcontainerGallery.scss";

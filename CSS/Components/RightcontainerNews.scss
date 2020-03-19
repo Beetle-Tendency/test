@@ -1,0 +1,8 @@
+.container-right-news {
+    @include sectionsize;
+    align-self: flex-end;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    display: none;
+}
